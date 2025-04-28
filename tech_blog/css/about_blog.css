@@ -1,0 +1,202 @@
+/* 🌐 Top Navigation Bar */
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(248, 232, 229);
+    padding: 0px;
+    box-shadow: 0px 4px 8px black;
+    color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    overflow-x: auto;
+    border-bottom: 8px solid magenta;
+    border-radius: 5px;
+}
+
+/* 🏆 Logo */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* 🔗 Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    margin-right: 45px;
+    padding-left: 5px;
+    justify-content: flex-start;
+    gap: 15px;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #888 transparent;
+}
+
+.nav-links::-webkit-scrollbar {
+    height: 5px;
+}
+.nav-links::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+.nav-links::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    background-color: magenta;
+    border-radius: 7px;
+    color: #ffffff !Important;
+    cursor: pointer;
+}
+
+/* 📱 Mobile Menu Button */
+.menu-toggle {
+    font-size: 24px;
+    display: none;
+    cursor: pointer;
+}
+
+/* 📱 Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: flex !important;
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        width: 100%;
+        gap: 12px;
+        padding: 10px 10px;
+        margin-right: 0;
+        background: rgb(248, 232, 229);
+    }
+
+    .nav-links li {
+        padding: 0;
+        display: inline-block;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Animated Header */
+.animated-header {
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Section Titles */
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Commitment & Difference Sections */
+.commitment, .difference {
+    padding: 50px 5%;
+}
+
+.commitment {
+    margin-top: 20px;
+    background: #cbf2fb none repeat scroll 0 0;
+    color: black;
+}
+
+.difference {
+    background: #cbf2fb none repeat scroll 0 0;
+    color: black;
+}
+
+.commitment-container, .difference-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.commitment-box, .difference-box {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.commitment-box img, .difference-box img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Middle Section: Full-width Image */
+.middle-section {
+    height: 350px;
+    background: url('../images/1.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.middle-section::after {
+    content: "Photo by Ryan Chan";
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    color: white;
+    font-size: 0.8em;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+    .commitment-container, .difference-container {
+        flex-direction: column;
+    }
+
+    .commitment-box, .difference-box {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* 🔗 Global Link Styles */
+a {
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    z-index: 1;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+}
+
+a:hover {
+    color: gray;
+    background-color: white;
+}

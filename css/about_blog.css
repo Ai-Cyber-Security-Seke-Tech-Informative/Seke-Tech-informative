@@ -1,0 +1,74 @@
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    
+}
+
+/* Commitment & Difference Sections */
+.commitment, .difference {
+    padding: 50px 5%;
+}
+
+.commitment {
+    background-color: #cbf2fb none repeat scroll 0 0;
+    color: black;
+    font-size: 1em;
+}
+
+.difference {
+    background: #cbf2fb none repeat scroll 0 0;
+    color: black;
+    margin-bottom: 2px;
+    font-size: 1em;
+}
+
+.commitment-container, .difference-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.commitment-box, .difference-box {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.commitment-box img, .difference-box img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Middle Section: Full-width Image */
+.middle-section {
+    height: 350px;
+    background: url('../images/5.png') no-repeat center center/cover;
+    position: relative;
+}
+
+.middle-section::after {
+    content: "Photo by Ryan Chan";
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    color: white;
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+    .commitment-container, .difference-container {
+        flex-direction: column;
+    }
+
+    .commitment-box, .difference-box {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+
+

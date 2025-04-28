@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+
+<html lang="en"><!--<![endif]--><!-- Begin Head --><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta name="description" content="web design, graphic design, cyber security">
+	<meta name="keywords" content="web design, cybersecurity, technology blog, graphic design, front-end development, back-end development, cyber trends, ransomware, web development, UI/UX design, hacking news, online security, website security, coding blog, tech news">
+    <meta name="author" content="Seke Tech Informative">
+	<meta name="MobileOptimized" content="320">
+	<title>Seke Tech Informative</title>
+	<!-- start style-->
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/nivo-slider.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/about_blog.css">
+	<!-- favicon link-->
+	<link rel="icon" type="image/ico" href="/favicon/favicon.ico">
+	<!-- Font Awesome 4.7 (for fa fa-facebook, fa fa-twitter, etc.) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+<!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+<script type="text/javascript" charset="utf-8" async="" defer="defer" src="js/script.js"></script>
+
+ <style>
+    .seke_slide img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #ddd;
+      margin-bottom: 20px;
+    }
+    .seke_section1 {
+      margin-top: 20px;
+    }
+    .seke_heading_wrapper h1,
+    .seke_heading_wrapper h2 {
+      text-align: center;
+    }
+    .seke_slide_detail {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Optional: smooth fading effect */
+    .owl-carousel .owl-item {
+      transition: all 1.5s ease-in-out;
+    }
+
+	.seke_logo1 {
+    text-align: center;
+    margin-bottom: 20px;
+    display: none; /* Oculto por defecto (pantallas grandes) */
+}
+
+.seke_logo1 img {
+    max-width: 120px;
+    height: auto;
+}
+
+/* Mostrar solo en pantallas pequeñas */
+@media (max-width: 768px) {
+    .seke_logo1 {
+        display: block;
+    }
+}
+
+.highlighted {
+        background-color: yellow;
+        border-radius: 4px;
+        padding: 2px 4px;
+        animation: fadeHighlight 0.5s;
+    }
+
+    @keyframes fadeHighlight {
+        from { background-color: orange; }
+        to { background-color: yellow; }
+    }
+
+	
+  </style>
+
+</head>
+
+<body class="site_loaded">
+	<div class="seke_loader_wrapper">
+		<div class="seke_loader">
+			<img src="images/loader.gif" alt="human-resource-loader">
+		</div>
+	</div>
+	<div class="seke_main_wrapper">
+		<!-- header start-->
+		<div class="seke_header_wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						<div class="seke_social_icon_head" style="margin-left: 100px; font-size: 18px;">
+							<ul>
+                                <!-- Facebook -->
+                                <li>
+                                    <a style="color: magenta;" href="https://www.facebook.com/profile.php?id=100069105407425" target="_blank">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            
+                                <!-- LinkedIn -->
+                                <li>
+                                    <a style="color: magenta;" href="https://www.linkedin.com/in/john-maseka-a63830255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            
+                                <!-- WhatsApp -->
+                                <li>
+                                    <a style="color: magenta;" href="https://wa.me/254746477078" target="_blank">
+                                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            
+                                <!-- GitHub -->
+                                <li>
+                                    <a style="color: magenta;" href="https://github.com/Ai-Cyber-Security-Seke-Tech-Informative" target="_blank">
+                                        <i class="fa fa-github" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                             
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						<div class="seke_logo">
+							<a href="#"><img style="height: 95px; margin-left: 20px;" src="images/logo2.png" alt="human-resource-logo" class="img-fluid" id="pages"></a>
+						</div>
+					</div>
+					<div style="position: relative; width: 300px; margin: 20px;">
+						<input type="text" id="searchInput" placeholder="Search..." style="width: 100%; padding: 10px; border-radius: 20px; border: 1px solid #ccc; outline: none;">
+						<button onclick="handleSearch()" style="position: absolute; right: 10px; top: 3px; border-radius: 5px; color: magenta; background-color: magenta; border: none; padding: 6px 10px;  cursor: pointer;">🔍</button>
+						
+						<div id="searchResults" style="position: absolute; top: 50px; left: 0; right: 0; background: white; border: 1px solid #ccc; border-top: none; border-radius: 0 0 10px 10px; max-height: 200px; overflow-y: auto; display: none; z-index: 1000;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="seke_menu_wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<input type="checkbox" id="toggle" class="seke_hidden">
+						<!-- Menu Toggle Button (Hamburger) for Small Screens -->
+					<button id="menuToggle" style=" font-size: 25px; position: fixed; top: 0px; left: 0px; z-index: 100; background: magenta; color: white; border: none; padding: 8px 10px; border-radius: 5px; cursor: pointer; display: none;">
+						☰ 
+					</button>
+
+					<!-- Side Navigation -->
+					<div class="seke_menu" id="sideMenu">
+						<!-- Close Button (inside the sidebar) for Small Screens -->
+						<button id="closeMenu" style="position: absolute; top: 15px; right: 15px; background: magenta; color: white; border: none; font-size: 20px; padding: 5px 10px; border-radius: 50%; cursor: pointer; display: none;">
+							✕
+						</button>
+
+						<div class="seke_logo1">
+							<img src="images/logo2.png" alt="Seke Tech Informative Logo">
+						</div>
+						<ul class="main-menu">
+							<li><a href="index.html">home</a></li>
+							<li><a href="about_tech.html">about</a></li>
+
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle">pages</a>
+								<ul class="sub-menu">
+									<li><a href="#About Me">About Us</a></li>
+									<li><a href="#Footer">Footer</a></li>
+								</ul>
+							</li>
+
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle">blog</a>
+								<ul class="sub-menu">
+									<li><a href="tech_blog/graphic_design_blog_part2.html">🖌️ Web Design vs. Graphic Design</a></li>
+									<li><a href="tech_blog/web_dvp_blog.html">🖥️ Web Design Trends & Updates</a></li>
+									<li><a href="tech_blog/graphic_design_blog.html">🎨 Principles of Graphic Design</a></li>
+									<li><a href="tech_blog/web_design_blog_part2.html">⚙️ Back-End Development</a></li>
+									<li><a href="tech_blog/web_dvp_blog.html">📝 Front-End Development</a></li>
+									<li><a href="tech_blog/cyber_trend.html">🚨 Understanding Cybersecurity</a></li>
+									<li><a href="tech_blog/cybertrend_blog_part2.html">💾 The Rise of Ransomware</a></li>
+								</ul>
+							</li>
+
+							<li><a href="services_tech.html">services</a></li>
+							<li><a href="contact_tech.html">contact</a></li>
+                            <li><a href="feedback.html">Feedback</a></li>
+						</ul>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+<div class="seke_slider_wrapper" style="min-height: 65vh; overflow: hidden;">
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <div class="seke_main_slide">
+                <div id="slider" class="nivoSlider" style="height: 680px; background-size: 100px;">
+                    <img src="images/tech_slide1.jpg" data-thumb="assets/images/slider/slide1.jpg" alt="Slide 1" data-transition="slideInRight" title="#seke_slider_caption1">
+                    <img src="images/tech_slide2.png" data-thumb="assets/images/slider/slide2.jpg" alt="Slide 2" data-transition="slideInLeft" title="#seke_slider_caption2">
+                    <img src="images/tech_slide1.webp" data-thumb="assets/images/slider/slide3.jpg" alt="Slide 3" data-transition="boxRainGrow" title="#seke_slider_caption3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide captions -->
+    <div id="seke_slider_caption1" class="nivo-html-caption">
+        <div class="seke_slide_content">
+            <span><img src="images/icon.svg" alt="Icon"></span>
+            <h1 style="text-shadow: 5px 5px 5px black;">"MORE ABOUT SEKE TECH INFORMATIVE!"</h1>
+            <p>Cutting-Edge Cybersecurity Solutions to Protect What Matters Most</p>
+            <a href="tech_blog/graphic_design_blog_part2.html" class="seke_btn">view more</a>
+        </div>
+    </div>
+
+    <div id="seke_slider_caption2" class="nivo-html-caption">
+        <div class="seke_slide_content">
+            <span><img src="images/icon.svg" alt="Icon"></span>
+            <h1 style="text-shadow: 5px 5px 5px black;">"Crafting Seamless  Experiences"</h1>
+            <p> Intelligent Web Design That Engages and Converts Into Future</p>
+            <a href="tech_blog/graphic_design_blog_part2.html" class="seke_btn">view more</a>
+        </div>
+    </div>
+
+    <div id="seke_slider_caption3" class="nivo-html-caption">
+        <div class="seke_slide_content">
+            <span><img src="images/icon.svg" alt="Icon"></span>
+            <h1 style="text-shadow: 5px 5px 5px black;">"Visuals That Speak Volumes"</h1>
+            <p>Bold Graphic Design to Elevate Your Brand Story Preferences</p>
+            <a href="tech_blog/graphic_design_blog_part2.html" class="seke_btn">view more</a>
+        </div>
+    </div>
+</div>
+
+	<div class="owl-nav disabled">
+	</div>
+	<div class="owl-dots disabled">
+		<div class="owl-dot active"><span></span>
+		</div>
+	</div>
+</div>
+
+
+<section class="commitment">
+    <h2 style="text-align: center;color: rgb(11, 11, 69);" id="About Me">About Us!</h2>
+    <div class="commitment-container">
+        <div class="commitment-box">
+            <img src="images/icon1.png" alt="Content Icon">
+            <h3 style="color: rgb(11, 11, 69);">Content</h3>
+            <p>We are a digital solutions professional with a passion for cybersecurity , web design , and graphic design . With a strong foundation in safeguarding data, crafting user-friendly websites, and creating visually stunning designs, We excel at delivering solutions that enhance security, engagement, and brand identity, ensuring businesses thrive in an ever-evolving digital landscape.</p>
+        </div>
+        <div class="commitment-box">
+            <img src="images/icon3.png" alt="Growth Icon">
+            <h3 style="color: rgb(11, 11, 69);">Growth</h3>
+            <p>Our expertises includes cybersecurity solutions , user experience design , and creative branding . We are also skilled in AI-driven tools , data visualization , and digital strategy , enabling Us to align innovative designs with robust security and business objectives, ensuring scalable growth and impactful results for your organization.</p>
+        </div>
+        <div class="commitment-box">
+            <img src="images/icon6.png" alt="Recognition Icon">
+            <h3 style="color: rgb(11, 11, 69);">Recognition</h3>
+            <p>With a digital-first mindset and a creativity-driven approach, We strive to deliver secure, engaging, and visually stunning solutions while ensuring business success. We are committed to innovation, user-centric design, and continuous learning to drive growth in dynamic and ever-evolving digital environments.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Middle Section (Full-width Image) -->
+<section class="middle-section"></section>
+
+<!-- Difference Section -->
+<section class="difference">
+    <h2 style="text-align: center;color:rgb(11, 11, 69);">What Makes Us Different</h2>
+    <div class="difference-container">
+        <div class="difference-box">
+            <img src="images/icon7.png" alt="Growth Icon">
+            <h3 style="color: rgb(11, 11, 69);">Positive Workplace</h3>
+            <p>We believe that innovation is the foundation of every successful business, and We excel at aligning digital solutions with strategic goals for security, engagement, and growth. 
+            </p>
+        </div>
+        <div class="difference-box">
+            <img src="images/icon4.png" alt="Career Icon">
+            <h3 style="color: rgb(11, 11, 69);">High Performance</h3>
+            <p>We are committed to fostering innovative, high-impact solutions that contribute to secure, engaging, and scalable digital growth.</p>
+        </div>
+        <div class="difference-box">
+            <img src="images/icon5.png" alt="Performance Icon">
+            <h3 style="color:rgb(11, 11, 69);">Our Passion</h3>
+            <p>Our passion for continuous learning, digital innovation, and user-centric design allows Us to bring fresh solutions that make a real impact in secure and creative ways.</p>
+        </div>
+    </div>
+</section>
+
+
+<div class="seke_openhour_wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="seke_operhour_section">
+                            <p id="Footer">call us 24/7</p>
+                            <h4>+254 746477078</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="seke_operhour_section">
+                            <p>email address</p>
+                            <h4>masekajohn2020@gmail.com</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="seke_operhour_section">
+                            <p>open hours</p>
+                            <h4>Daily 8:00am- 11:30</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="seke_footer_main_wrapper">
+    <div class="seke_footer_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="seke_about_widget widget">
+                        <h2 class="widget-title">about us</h2>
+                        <p>We are solutions professionals with a passion for cybersecurity , web design , and graphic design . With a strong foundation in safeguarding data, crafting user-friendly websites, and creating visually stunning designs,</p>
+                        <div class="seke_social_icon">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="seke_link_widget widget">
+                        <h2 class="widget-title">Quick links</h2>
+                        <ul>
+                            <li><a href="services_tech.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i>services</a></li>
+                            <li><a href="tech_blog/web_dvp_blog.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i>blogs</a></li>
+                            <li><a href="#pages"><i class="fa fa-angle-double-right" aria-hidden="true"></i>pages</a></li>
+                            <li><a href="contact_tech.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i>contact</a>
+                            </li>
+                            <li><a href="about_tech.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i>about</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="seke_link_widget widget">
+                        <h2 class="widget-title">Tags</h2>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>info@seketech.ac.ke
+                                    </a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>masekajohn2020@gmail.com
+                                   </a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>www.seketech.ac.ke
+                                    </a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>+254 746477078
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="seke_subscribe_widget widget">
+                        <h2 class="widget-title">subscribe</h2>
+                        <p>Subscribe to our page today and get exclusive access to expert advice, innovative strategies,
+                             and updates delivered straight to your inbox.</p>
+                        <div class="input-group seke_subscribe_wrapper">
+                            <input type="text" class="form-control" placeholder="Enter Your E-mail" name="subscribe">
+                            <span class="seke_subscribe_btn">
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="seke_copyright_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p>Copyright © 2025, SEKE. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<div class="goto_wrapper goto">
+<span>
+    <img src="images/right-arrow.png" alt="">
+</span>
+</div>
+<!-- site jquery start -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/popper.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script src="js/index.js" defer></script>
+
+<!-- jQuery -->
+
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Init Owl Carousel -->
+<script>
+$(document).ready(function(){
+$('.owl-carousel').owlCarousel({
+loop: true,
+margin: 10,
+nav: false,
+autoplay: true,
+autoplayTimeout: 5000, // 5 segundos por slide
+autoplayHoverPause: true,
+smartSpeed: 1500,       // Velocidad de transición entre slides (más alto = más suave)
+autoplaySpeed: 1500,    // Velocidad de transición automática
+responsive: {
+  0: { items: 1 },
+  600: { items: 1 },
+  1000: { items: 1 }
+}
+});
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+    dropdownToggles.forEach(function(toggle) {
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const submenu = this.nextElementSibling;
+
+            if (submenu.style.maxHeight && submenu.style.maxHeight !== '0px') {
+                // Submenu is open, close it
+                submenu.style.maxHeight = '0px';
+                submenu.style.opacity = '0';
+                submenu.style.visibility = 'hidden';
+                submenu.style.overflow = 'hidden';
+            } else {
+                // Close all other submenus first
+                document.querySelectorAll('.sub-menu').forEach(function(menu) {
+                    menu.style.maxHeight = '0px';
+                    menu.style.opacity = '0';
+                    menu.style.visibility = 'hidden';
+                    menu.style.overflow = 'hidden';
+                });
+
+                // Open the clicked submenu
+                submenu.style.maxHeight = submenu.scrollHeight + 'px';
+                submenu.style.opacity = '1';
+                submenu.style.visibility = 'visible';
+                submenu.style.overflow = 'visible';
+            }
+        });
+    });
+
+    const menuToggle = document.getElementById('menuToggle');
+    const sideMenu = document.getElementById('sideMenu');
+    const closeMenu = document.getElementById('closeMenu');
+
+    function checkScreenWidth() {
+        if (window.innerWidth <= 768) {
+            menuToggle.style.display = 'block';
+            closeMenu.style.display = 'none'; // Hide close button by default
+            sideMenu.style.left = '-100%';    // Keep menu hidden initially
+            sideMenu.style.position = 'fixed'; // Make sure menu stays over content
+            sideMenu.style.top = '0';
+            sideMenu.style.left = '-100%';
+            sideMenu.style.height = '100%';
+            sideMenu.style.width = '250px'; // You can adjust width
+            sideMenu.style.transition = 'left 0.3s ease'; // Smooth slide
+            sideMenu.style.zIndex = '99'; // Higher than the button
+        } else {
+            menuToggle.style.display = 'none';
+            closeMenu.style.display = 'none';
+            sideMenu.style.position = 'relative';
+            sideMenu.style.left = '0';
+            sideMenu.style.height = 'auto';
+            sideMenu.style.width = 'auto';
+        }
+    }
+
+    window.addEventListener('resize', checkScreenWidth);
+    window.addEventListener('load', checkScreenWidth);
+
+    menuToggle.addEventListener('click', function () {
+        sideMenu.style.left = '0';
+        menuToggle.style.display = 'none'; // Hides the menu toggle button when menu opens
+        closeMenu.style.display = 'block'; // Show the close button
+    });
+
+    closeMenu.addEventListener('click', function () {
+        sideMenu.style.left = '-100%';
+        menuToggle.style.display = 'block'; // Show the menu toggle again when menu closes
+        closeMenu.style.display = 'none'; // Hide the close button
+    });
+
+    window.addEventListener('load', function() {
+        const loader = document.querySelector('.seke_loader_wrapper');
+        if (loader) {
+            loader.style.opacity = '0';
+            setTimeout(function() {
+                loader.style.display = 'none';
+                document.body.classList.add('site_loaded');
+                const mainContent = document.getElementById('mainContent');
+                if (mainContent) {
+                    mainContent.style.display = 'block';
+                }
+            }, 500); // Wait 0.5 second for fade effect
+        }
+    });
+});
+
+</script>
+<!-- site jquery end -->
+
+</body>
+</html>

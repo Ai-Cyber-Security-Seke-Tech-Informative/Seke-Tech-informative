@@ -1,0 +1,208 @@
+/* General Page Styl
+
+
+/* General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-align: center;
+    background-color: aquamarine;
+
+}
+header {
+    background: rgba(0, 80, 0, 0.9);
+    padding: 10px 0;
+    overflow: hidden; /* Ensures header content does not overflow */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+    padding: 0 20px;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents wrapping */
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #f4cd62;
+    flex-shrink: 0; /* Prevents logo from shrinking */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    white-space: nowrap; /* Prevents text from wrapping */
+    flex-shrink: 0; /* Prevents items from shrinking */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f4cd62;
+}
+
+/* Responsive Styles for Small Screens */
+@media screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        overflow-x: auto; /* Enables scrolling */
+        -webkit-overflow-scrolling: touch; /* Improves scrolling on iOS */
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row; /* Keeps items horizontal */
+        overflow-x: auto;
+        padding-bottom: 5px;
+    }
+
+    .nav-links li {
+        margin: 0 10px;
+    }
+
+    .logo {
+        font-size: 1.5em;
+    }
+}
+
+
+/* Animated Header */
+.animated-header {
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Section Titles */
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: blue;
+}
+
+
+/* Navigation Styling */
+
+/* Animated Div */
+.animated-container {
+    width: 55%;
+    height: 470px;
+    margin: 40px auto;
+    padding: 20px;
+    background: azure;
+    border-radius: 15px;
+    overflow: auto;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+}
+
+/* Hover Effect (Expands to 80% width) */
+.animated-container:hover {
+    width: 60%;
+    height: 490px;
+}
+
+/* Icon Div on Top */
+
+/* Text Animation (Typing Effect) */
+.animated-text {
+    font-size: 1.5em;
+    opacity: 0;
+    white-space: wrap;
+    overflow: auto;
+    border-right: 2px solid white;
+    display: block;
+    animation: typing 5s steps(30) forwards, blink 0.7s infinite;
+}
+
+/* Keyframes for typing animation */
+@keyframes typing {
+    from { width: 100%; opacity: 1; }
+    to { width: 100%; opacity: 1; }
+}
+
+/* Blinking Cursor */
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+.service-icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 10px;
+}
+
+.service-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+h2 {
+    color: black;
+    text-shadow: 3px 3px 3px white;
+    animation: heading 3s steps(30) forwards, blink 0.7s infinite;
+}
+@keyframes heading {
+    from { width: 60%; opacity: 1; }
+    to { width: 100%; opacity: 1; }
+}
+.btn {
+    padding: 12px 24px;
+    background: blue;
+    color: white;
+    float: right;
+    margin-top: 11px;
+    font-size: 18px;
+    border: none;
+    font-weight: bold;
+    transition: 2s;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.btn:hover {
+    padding: 12px 24px;
+    background: cyan;
+    color: white;
+    font-size: 18px;
+    transition: 2s;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+ol {
+    display: block;
+    list-style:lower-roman;
+    font-size: 1.5em;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+p{
+    font-size: 1.5em;
+}
+

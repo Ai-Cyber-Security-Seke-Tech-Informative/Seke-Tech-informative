@@ -1,0 +1,248 @@
+.container1 {
+    background: #f7e4e4;
+    margin-top: 100px;
+    padding: 2rem;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden; /* Prevent overflow */
+    box-shadow: 0px 2px 8px black;
+    width: 100%;
+    max-width: 600px;
+    word-wrap: break-word;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1a202c;
+    word-break: break-word; /* Break long words */
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #251962;
+    word-break: break-word;
+}
+
+.sectionone {
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #2d3748;
+    word-break: break-word;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Very important to avoid overflow */
+    word-break: break-word;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #34d399;
+}
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap; /* Allow radios to wrap on small screens */
+    gap: 1rem;
+}
+
+.radio-group input[type="radio"] {
+    accent-color: #0f0b88;
+    margin-right: 0.5rem;
+}
+
+.name-group {
+    display: flex;
+    flex-wrap: wrap; /* Important: Allow name inputs to stack if screen is small */
+    gap: 1rem;
+}
+
+.name-group input {
+    flex: 1 1 100%; /* On small devices, inputs take 100% width */
+    min-width: 0; /* Prevent overflow */
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #34d399;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.submit-button:hover {
+    background-color: #2dd470;
+}
+
+@media (max-width: 600px) {
+    .container1 {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        padding: 0.7rem;
+        font-size: 1rem;
+    }
+
+    .submit-button {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* 🌐 Top Navigation Bar */
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(248, 232, 229);
+    padding: 0px;
+    box-shadow: 0px 4px 8px black;
+    color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    overflow-x: auto;
+    border-bottom: 8px solid magenta;
+    border-radius: 5px;
+}
+
+/* 🏆 Logo */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* 🔗 Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    margin-right: 45px;
+    padding-left: 5px;
+    justify-content: flex-start;
+    gap: 15px;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #888 transparent;
+}
+
+.nav-links::-webkit-scrollbar {
+    height: 5px;
+}
+.nav-links::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+.nav-links::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    margin-left: 5px;
+    color: black;
+    transition: 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    background-color: magenta;
+    border-radius: 7px;
+    padding: 16px 10px;
+    border-radius: 5px;
+    color: #ffffff !Important;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* 📱 Mobile Menu Button */
+.menu-toggle {
+    font-size: 24px;
+    display: none;
+    cursor: pointer;
+}
+
+/* 📱 Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: flex !important;
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        width: 100%;
+        gap: 12px;
+        padding: 10px 10px;
+        margin-right: 0;
+        background: rgb(248, 232, 229);
+    }
+
+    .nav-links li {
+        padding: 0;
+        display: inline-block;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+
+/* General Styles */
+body {
+    
+    background-color: rgb(181, 245, 223);
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
